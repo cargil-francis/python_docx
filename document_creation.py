@@ -14,10 +14,12 @@ runs.bold=True
 runs.italic=True
 # Add a heading
 doc.add_heading('Section 1: Introduction', level=2)
-
-
-
-
-
+#Add a bulleted list
+list_paragraph = doc.add_paragraph()
+list_paragraph.add_run('Bullet 1').bold = True
+list_paragraph.add_run(' - This is the 1st bullet point.')
+list_paragraph.add_run('\n')
+list_paragraph.add_run('Bullet 2').bold = True
+list_paragraph.add_run(' - This is the 2nd bullet point.')
 
 
